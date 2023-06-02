@@ -23,10 +23,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="<?=route('artista')?>">Artista</a>
+          <a class="nav-link" href="<?=route('artistas')?>">Artista</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=route('obra')?>">Obra</a>
+          <a class="nav-link" href="<?=route('obras')?>">Obra</a>
         </li>
       </ul>
     </div>

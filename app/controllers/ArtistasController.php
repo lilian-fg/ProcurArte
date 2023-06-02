@@ -9,7 +9,7 @@ use models\Artista;
 #A classe devera sempre iniciar com letra maiuscula
 #terá sempre o mesmo nome do arquivo
 #e precisa terminar com a palavra Controller
-class ArtistaController {
+class ArtistasController {
 
 	/**
 	* Para acessar http://localhost/NOMEDOPROJETO/usuarios/index
@@ -33,9 +33,8 @@ class ArtistaController {
 		#busca todos os registros
 		$send['lista'] = $model->all();
 
-
 		#chama a view
-		render("artista", $send);
+		render("artistas", $send);
 	}
 
 	
@@ -49,7 +48,7 @@ class ArtistaController {
 			$id = $model->update($id, $_POST);
 		}
 		
-		redirect("artista/index/$id");
+		redirect("artistas/index/$id");
 	}
 
 	function deletar(int $id){
@@ -57,7 +56,7 @@ class ArtistaController {
 		$model = new Artista();
 		$model->delete($id);
 
-		redirect("artista/index/");
+		redirect("artistas/index/");
 	}
 
 
